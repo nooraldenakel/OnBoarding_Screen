@@ -3,6 +3,7 @@ package com.example.onboardingscreen
 import androidx.compose.ui.graphics.Color
 import com.example.onboardingscreen.ui.theme.ColorBlue
 import com.example.onboardingscreen.ui.theme.ColorGreen
+import com.example.onboardingscreen.ui.theme.ColorPink
 import com.example.onboardingscreen.ui.theme.ColorYellow
 
 data class OnBoardingData(
@@ -31,6 +32,15 @@ fun getOnBoardingData(): ArrayList<OnBoardingData> {
             mainColor = ColorYellow,
             mainText = "Fresh Drinks, Stay Fresh",
             subText = "Not only food. we provide clear healthy drink options for you. Fresh taste always accompanies you",
+        )
+    )
+    list.add(
+        OnBoardingData(
+            image = R.drawable.dessert,
+            backgroundColor = ColorPink,
+            mainColor = ColorPink,
+            mainText = "Sweet Dessert",
+            subText = "When it comes to dieting, dessert is likely the first thing you ditch. But, chowing down on that chocolate cake can be guilt-free."
         )
     )
     list.add(

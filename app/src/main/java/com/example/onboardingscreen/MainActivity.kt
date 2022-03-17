@@ -41,7 +41,7 @@ class MainActivity : ComponentActivity() {
                     val pagerState = rememberPagerState(
                         pageCount = items.size,
                         infiniteLoop = false,
-                        initialOffscreenLimit = 2,
+                        initialOffscreenLimit = 3,
                         initialPage = 0
                     )
                     OnBoardingPager(
@@ -128,7 +128,7 @@ class MainActivity : ComponentActivity() {
                             verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.SpaceBetween
                         ) {
-                            if (pageState.currentPage != 2) {
+                            if (pageState.currentPage != 3) {
                                 TextButton(onClick = {}) {
                                     Text(
                                         text = "Skip Now",
